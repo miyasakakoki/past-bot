@@ -27,7 +27,7 @@ async def on_message(message):
         await message.channel.send("Bot Version: " + str(VERSION) + "\n" )
     if message.content == "/pp":
         await message.channel.send(message.channel, file=discord.File("img/pp.gif","pp.gif"))
-    if message.content[0:7]== "/pizza ":
+    if message.content == "/pizza":
         await message.channel.send(message.channel, get_next_pizza_party )
 
 def get_help_text():
